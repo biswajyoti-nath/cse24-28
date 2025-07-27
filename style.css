@@ -1,40 +1,90 @@
-.gradient-background {
-  background: linear-gradient(300deg, #00bfff, #ff4c68, #ef8172,#b8860b);
-  background-size: 180% 180%;
-  animation: gradient-animation 18s ease infinite;
+:root{
+  --bg:#121212;
+  --card:#1c1c1c;
+  --muted:#9e9e9e;
 }
 
-@keyframes gradient-animation {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
+body{
+  font-family:'Poppins',sans-serif;
+  background-color:var(--bg);
+  color:#f1f1f1;
+  scroll-behavior:smooth;
 }
 
-.gradient-background1 {
-  background: linear-gradient(300deg, #000000,#b8860b, #a9a9a9);
-  background-size: 180% 180%;
-  animation: gradient-animation 18s ease infinite;
+/* Navbar links */
+.nav-link{
+  color:#aaa;
+}
+.nav-link:hover,.nav-link:focus{
+  color:#fff;
 }
 
-@keyframes gradient-animation {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
+/* Hero */
+.hero-section{
+  background:linear-gradient(135deg,#1f1c2c,#928dab);
+  color:#fff;
+  border-radius:12px;
+  margin:0 1rem;
+}
+.hero-img{
+  max-width:90%;
+  border-radius:12px;
+  box-shadow:0 6px 20px rgba(0,0,0,.4);
 }
 
-.profile-img {
-  border-radius: 50%;
-  height: 100px;
+/* Next birthday card */
+.bg-gradient-dark{
+  background:linear-gradient(135deg,#232526,#414345);
+}
+
+/* Birthday cards */
+.birthday-card{
+  background-color:var(--card);
+  border:none;
+  border-radius:10px;
+  transition:transform .2s, box-shadow .2s;
+}
+.birthday-card:hover{
+  transform:translateY(-4px);
+  box-shadow:0 6px 15px rgba(0,0,0,.4);
+}
+.badge-month{
+  background:#2e2e2e;
+  font-weight:400;
+  letter-spacing:.3px;
+}
+
+/* Link cards */
+.link-card{
+  background-color:var(--card);
+  border:1px solid rgba(255,255,255,.05);
+  transition:transform .15s, box-shadow .15s;
+  color:#f1f1f1;
+}
+.link-card:hover{
+  transform:translateY(-4px);
+  box-shadow:0 6px 15px rgba(0,0,0,.4);
+}
+
+/* Footer */
+.profile-img{
+  border-radius:50%;
+  height:100px;width:100px;object-fit:cover;
+  border:3px solid #444;
+}
+
+/* Utility */
+.text-secondary{color:var(--muted)!important}
+/* Month Filter Buttons */
+#monthFilters .btn.active {
+  background-color: #f1f1f1;
+  color: #121212;
+  font-weight: bold;
+}
+
+/* Next 3 Birthdays Widget */
+#next-three ul li {
+  background-color: #1c1c1c;
+  color: #f1f1f1;
+  border: none;
 }

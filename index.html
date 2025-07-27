@@ -1,65 +1,210 @@
 <!DOCTYPE html>
 <html lang="en" data-bs-theme="dark">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSE 24'28 Test</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
-    <link rel="stylesheet" href="./style.css"
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CSE 24'28 • BVEC</title>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <!-- AOS (scroll animations) -->
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+  <!-- Custom -->
+  <link rel="stylesheet" href="style.css" />
 </head>
 
-
 <body>
-   
-<section id="Header">
-    <header class="py-3 mb-4 border-bottom"> <div class="container d-flex flex-wrap justify-content-center"> <a href="/" class="d-flex align-items-center mb-3 mb-lg-0 me-lg-auto link-body-emphasis text-decoration-none"> <svg class="bi me-2" width="40" height="32" aria-hidden="true"><img src="./assests/logo.png" height="30px" alt="class logo"></svg> <span class="fs-4"> CSE 24'28 </span> </a> <form class="col-12 col-lg-auto mb-3 mb-lg-0" role="search"> <input type="search" class="form-control" placeholder="BVEC" aria-label="SearcH"> </form> </div> </header>
-</section>
+  <!-- NAVBAR -->
+  <header class="navbar navbar-dark bg-dark shadow-sm fixed-top">
+    <div class="container d-flex justify-content-between align-items-center">
+      <a href="#home" class="navbar-brand d-flex align-items-center">
+        <img src="./assets/logo.png" height="32" class="me-2" alt="Logo">
+        <span class="fw-bold">CSE 24'28</span>
+      </a>
 
-<section id="Front" class="gradient-background">
-    <div class="container col-xxl-8 px-4 py-3"> <div class="row flex-lg-row-reverse align-items-center g-5 py-5"> <div class="col-10 col-sm-8 col-lg-6"> <img src="./assests/grphoto.jpg" class="d-block mx-lg-auto img-fluid" alt="Group Photo" width="700" height="500" loading="lazy"> </div> <div class="col-lg-6"> <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3"></h1><h1>Hello from 2024-28 batch of BVEC, CSE</h1><p class="lead">Thanks for visiting our website, it's a simple non-interactive buid to begin our journey!!</p></div> </div> </div>
-</section>
+      <nav class="d-none d-md-flex gap-3">
+        <a class="nav-link" href="#home">Home</a>
+        <a class="nav-link" href="#birthdays">Birthdays</a>
+        <a class="nav-link" href="#links">Official Links</a>
+        <a class="nav-link" href="#whatsapp">WhatsApp</a>
+        <a class="nav-link" href="#footer">Contact</a>
+      </nav>
 
-<section id="birthdaay" class="gradient-background1">
-<div class="container" my-3>
-    <h5 class="mb-3">Birthday of some of our classmates, if you wanna wish them :)</h5>
-    <div class="row mb-3 text-center"> <div class="col-md-8 themed-grid-col">Argha</div> <div class="col-md-4 themed-grid-col">9th Nov</div> </div>
-    <div class="row mb-3 text-center"> <div class="col-md-8 themed-grid-col">Biki</div> <div class="col-md-4 themed-grid-col">2nd Jan</div> </div>
-    <div class="row mb-3 text-center"> <div class="col-md-8 themed-grid-col">Bishwashree</div> <div class="col-md-4 themed-grid-col">12th Oct</div> </div>
-    <div class="row mb-3 text-center"> <div class="col-md-8 themed-grid-col">Biswajyoti</div> <div class="col-md-4 themed-grid-col">12th May</div> </div>
-    <div class="row mb-3 text-center"> <div class="col-md-8 themed-grid-col">Iqram</div> <div class="col-md-4 themed-grid-col">31st July</div> </div>
-    <div class="row mb-3 text-center"> <div class="col-md-8 themed-grid-col">Uddipan</div> <div class="col-md-4 themed-grid-col">4th July</div> </div>
-</div>
-</section>
-
-<!-- Testimonial -->
-  <section id="testimonial">
-    <div class="my-5">
-      <div class="p-5 text-center bg-body-tertiary">
-        <div class="container py-5">
-                <div class="container">
-            <h5>Our legendary WhatsApp Duo</h5>
-            <p>           
-                  
-            </p>
-          <div class="row pb-3">
-            <div class="col-lg-6 col-sm-12">
-              <img src="assests/wsp comm.png" alt="Common Group DP" height="100">
-            </div>
-            <div class="col-lg-6 col-sm-12">
-              <img src="./assests/wsp frml.png" alt="Formal group DP" height="100">
-            </div>
-        </div>
-        </div>
-          <h3 class="text-body-emphasis">"That's all for now, see ya later..."</h3>
-          <img class="profile-img mt-5" src="./assests/myimg.jpg" alt="Iqram image">
-          <p class="col-lg-8 mx-auto lead mt-2">
-            Tata, bye
-          </p>
-        </div>
+      <!-- mobile -->
+      <button class="navbar-toggler d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
     </div>
+  </header>
+
+  <!-- Offcanvas mobile nav -->
+  <div class="offcanvas offcanvas-end bg-dark text-white" tabindex="-1" id="mobileNav">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title">Menu</h5>
+      <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
     </div>
-  <!-- hahaa, y r souce code
-   hello from iqram:)-->
-  </section>
+    <div class="offcanvas-body">
+      <a class="nav-link" href="#home" data-bs-dismiss="offcanvas">Home</a>
+      <a class="nav-link" href="#birthdays" data-bs-dismiss="offcanvas">Birthdays</a>
+      <a class="nav-link" href="#links" data-bs-dismiss="offcanvas">Official Links</a>
+      <a class="nav-link" href="#whatsapp" data-bs-dismiss="offcanvas">WhatsApp</a>
+      <a class="nav-link" href="#footer" data-bs-dismiss="offcanvas">Contact</a>
+    </div>
+  </div>
+
+  <main id="home" class="pt-5 mt-4">
+    <!-- HERO -->
+    <section class="hero-section text-center" data-aos="fade-up">
+      <div class="container py-5">
+        <img src="./assets/grphoto.jpg" class="img-fluid rounded shadow-lg mb-4 hero-img" alt="Group Photo">
+        <h1 class="fw-bold">Hello from 2024–28 Batch of BVEC, CSE 🎉</h1>
+        <p class="lead text-muted mt-2">
+          Thanks for visiting our website! This is a simple build to begin our journey.
+        </p>
+      </div>
+    </section>
+
+    <!-- NEXT BIRTHDAY WIDGET -->
+    <section class="py-4" id="next-bday" data-aos="zoom-in">
+      <div class="container">
+        <div class="card bg-gradient-dark border-0 p-4 text-center rounded-4 shadow">
+          <h2 class="h4 mb-2">🎉 Next Birthday</h2>
+          <p id="next-birthday-text" class="mb-0 text-secondary">Loading…</p>
+        </div>
+      </div>
+    </section>
+
+  <!-- BIRTHDAYS -->
+<section id="birthdays" class="birthday-section py-5" data-aos="fade-up">
+  <div class="container">
+    <div class="d-flex justify-content-between align-items-center flex-wrap gap-2 mb-4">
+      <h2 class="fw-semibold mb-0">🎂 Classmates' Birthdays</h2>
+      <div class="d-flex align-items-center gap-2">
+        <input id="searchName" class="form-control form-control-sm" placeholder="Search by name...">
+        <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#addBirthdayModal">
+          + Add Birthday
+        </button>
+      </div>
+    </div>
+
+    <!-- Month Filter Chips -->
+    <div class="d-flex flex-wrap gap-2 mb-4" id="monthFilters">
+      <button class="btn btn-outline-light btn-sm active" data-month="all">All</button>
+      <button class="btn btn-outline-light btn-sm" data-month="0">Jan</button>
+      <button class="btn btn-outline-light btn-sm" data-month="1">Feb</button>
+      <button class="btn btn-outline-light btn-sm" data-month="2">Mar</button>
+      <button class="btn btn-outline-light btn-sm" data-month="3">Apr</button>
+      <button class="btn btn-outline-light btn-sm" data-month="4">May</button>
+      <button class="btn btn-outline-light btn-sm" data-month="5">Jun</button>
+      <button class="btn btn-outline-light btn-sm" data-month="6">Jul</button>
+      <button class="btn btn-outline-light btn-sm" data-month="7">Aug</button>
+      <button class="btn btn-outline-light btn-sm" data-month="8">Sep</button>
+      <button class="btn btn-outline-light btn-sm" data-month="9">Oct</button>
+      <button class="btn btn-outline-light btn-sm" data-month="10">Nov</button>
+      <button class="btn btn-outline-light btn-sm" data-month="11">Dec</button>
+    </div>
+
+    <!-- Countdown for next 3 -->
+    <div id="next-three" class="mb-4">
+      <h5 class="fw-bold">Next 3 Birthdays:</h5>
+      <ul class="list-group" id="nextThreeList"></ul>
+    </div>
+
+    <div class="row g-3" id="birthdayGrid"></div>
+    <p id="counter" class="text-secondary small mt-3"></p>
+  </div>
+</section>
+
+
+    <!-- OFFICIAL LINKS -->
+    <section id="links" class="py-5 bg-dark-subtle" data-aos="fade-up">
+      <div class="container">
+        <h2 class="fw-semibold text-center mb-4">🔗 Official Links</h2>
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-4">
+            <a href="https://www.bvec.ac.in/" class="text-decoration-none" target="_blank" rel="noopener">
+              <div class="card link-card p-4 h-100">
+                <h5 class="mb-2">BVEC Official Website</h5>
+                <p class="text-secondary mb-0">Visit the college website.</p>
+              </div>
+            </a>
+          </div>
+          <div class="col-md-6 col-lg-4">
+          <a href="https://www.bvec.ac.in/cse.php" class="text-decoration-none" target="_blank" rel="noopener">
+              <div class="card link-card p-4 h-100">
+                <h5 class="mb-2">CSE Department Page</h5>
+                <p class="text-secondary mb-0">Department resources & notices.</p>
+              </div>
+            </a>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <a href="https://astu.samarth.edu.in/index.php/site/login" class="text-decoration-none" target="_blank" rel="noopener">
+              <div class="card link-card p-4 h-100">
+                <h5 class="mb-2">ASTU University</h5>
+                <p class="text-secondary mb-0">Syllabus, results, academic calendar.</p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHATSAPP -->
+    <section id="whatsapp" class="py-5 text-center" data-aos="fade-up">
+      <div class="container">
+        <h2 class="fw-semibold mb-4">Our Legendary WhatsApp Duo</h2>
+        <div class="d-flex justify-content-center gap-4 flex-wrap">
+          <img src="./assets/wsp comm.png" class="rounded shadow-lg" height="120" alt="Common DP">
+          <img src="./assets/wsp frml.png" class="rounded shadow-lg" height="120" alt="Formal DP">
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer id="footer" class="text-center py-5">
+    <img src="./assets/myimg.jpg" class="profile-img shadow mb-3" alt="Iqram">
+    <h5 class="fw-bold">"That's all for now, see ya later..."</h5>
+    <p class="text-secondary mb-2">Tata, bye 👋</p>
+    <p class="text-secondary small mb-0">Made with ❤️ by CSE 24'28</p>
+  </footer>
+
+  <!-- Add Birthday Modal -->
+  <div class="modal fade" id="addBirthdayModal" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <form class="modal-content" id="birthdayForm">
+        <div class="modal-header">
+          <h5 class="modal-title">Add Birthday</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="mb-3">
+            <label class="form-label">Name *</label>
+            <input type="text" class="form-control" id="nameInput" required maxlength="40">
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Date *</label>
+            <input type="date" class="form-control" id="dateInput" required>
+            <div class="form-text">Format: YYYY-MM-DD</div>
+          </div>
+          <div class="alert alert-danger d-none" id="formError"></div>
+        </div>
+        <div class="modal-footer">
+          <button type="submit" class="btn btn-primary">Save</button>
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script src="app.js"></script>
+  <script>
+    AOS.init({ duration: 800, once: true });
+  </script>
 </body>
 </html>
