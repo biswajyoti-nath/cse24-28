@@ -5,103 +5,105 @@
 }
 
 body{
-  font-family:'Poppins',sans-serif;
-  background-color:var(--bg);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", sans-serif;
+  background-color: var(--bg);
   color:#f1f1f1;
   scroll-behavior:smooth;
+  overflow-x: hidden; /* Prevents horizontal scroll */
 }
 
-/* Navbar links */
-.nav-link{
-  color:#aaa;
-}
-.nav-link:hover,.nav-link:focus{
-  color:#fff;
+/* Navbar */
+.logo-img {
+  height: 40px;
+  width: auto;
 }
 
-/* Hero */
+/* Hero Section */
 .hero-section{
-  background:linear-gradient(135deg,#1f1c2c,#928dab);
-  color:#fff;
-  border-radius:12px;
-  margin:0 1rem;
+  background: linear-gradient(135deg, #1f1c2c, #928dab);
+  color: #fff;
+  border-radius: 10px;
+  margin: 0 1rem;
 }
 .hero-img{
-  max-width:90%;
-  border-radius:12px;
-  box-shadow:0 6px 20px rgba(0,0,0,.4);
+  max-width: 90%;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
 }
 
 /* Next birthday card */
 .bg-gradient-dark{
-  background:linear-gradient(135deg,#232526,#414345);
+  background: linear-gradient(135deg,#232526,#414345);
+  color: #fff;
 }
 
-/* Birthday cards */
-.birthday-card{
-  background-color:var(--card);
-  border:none;
-  border-radius:10px;
-  transition:transform .2s, box-shadow .2s;
+/* Birthdays */
+.birthday-section .card {
+  background-color: var(--card);
+  border: none;
+  border-radius: 10px;
+  transition: transform 0.2s, box-shadow 0.2s;
 }
-.birthday-card:hover{
-  transform:translateY(-4px);
-  box-shadow:0 6px 15px rgba(0,0,0,.4);
-}
-.badge-month{
-  background:#2e2e2e;
-  font-weight:400;
-  letter-spacing:.3px;
+.birthday-section .card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
 }
 
-/* Link cards */
-.link-card{
-  background-color:var(--card);
-  border:1px solid rgba(255,255,255,.05);
-  transition:transform .15s, box-shadow .15s;
-  color:#f1f1f1;
-}
-.link-card:hover{
-  transform:translateY(-4px);
-  box-shadow:0 6px 15px rgba(0,0,0,.4);
-}
-
-/* Footer */
-.profile-img{
-  border-radius:50%;
-  height:100px;width:100px;object-fit:cover;
-  border:3px solid #444;
-}
-
-/* Utility */
-.text-secondary{color:var(--muted)!important}
-/* Month Filter Buttons */
+/* Month filters */
 #monthFilters .btn.active {
   background-color: #f1f1f1;
   color: #121212;
   font-weight: bold;
 }
 
-/* Next 3 Birthdays Widget */
-#next-three ul li {
-  background-color: #1c1c1c;
+/* Links */
+.link-card {
+  background-color: var(--card);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  transition: transform 0.15s, box-shadow 0.15s;
   color: #f1f1f1;
-  border: none;
 }
+.link-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+}
+
+/* WhatsApp images */
+#whatsapp img {
+  border: 2px solid #444;
+  border-radius: 12px;
+}
+
+/* Footer */
+.profile-img{
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+  object-fit: cover;
+  border: 3px solid #444;
+}
+
+/* General images */
 img {
   max-width: 100%;
   height: auto;
 }
 
-body {
-  overflow-x: hidden; /* Prevent horizontal scroll */
+/* Animated gradients for legacy sections (kept if you still want them) */
+.gradient-background1 {
+  background: linear-gradient(300deg, #000000,#b8860b, #a9a9a9);
+  background-size: 180% 180%;
+  animation: gradient-animation 18s ease infinite;
+}
+@keyframes gradient-animation {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
 }
 
-.row {
-  margin-left: 0;
-  margin-right: 0;
-}
-.logo-img {
-  height: 30px;
-  width: auto;
+/* Dark list group items */
+.list-group-item{
+  background-color: #1c1c1c;
+  color: #f1f1f1;
+  border: 1px solid rgba(255,255,255,0.05);
 }
