@@ -101,3 +101,7 @@ body {
   margin-left: 0;
   margin-right: 0;
 }
+.logo-img {
+  height: 30px;
+  width: auto;
+}
